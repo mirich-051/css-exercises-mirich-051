@@ -1,3 +1,4 @@
+/* Here, add text centering for the entire page, not for each element separately.*/
 body {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -10,6 +11,20 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center;
+  margin: 32px auto;
+}
+
+.items-container {
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+}
+
+/* Set the width to max-width, to scale items on smaller devices.*/
+.item {
+  width: 200px;
+  text-align: center;
 }
 
 /* do not edit this footer */
