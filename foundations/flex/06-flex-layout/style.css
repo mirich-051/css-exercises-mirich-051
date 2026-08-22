@@ -13,24 +13,21 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
 .header, .footer {
-  padding: 10px 16px;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
-  gap: 16px;
-}
-
-.left-links, .right-links {
-  display: flex;
+  padding: 16px;
 }
 
 .content {
-  text-align: center;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .footer {
@@ -47,11 +44,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
-  padding: 10px;
-}
-
-.input {
-  margin: 16px auto;
+  padding: 8px 16px;
 }
 
 input {
@@ -62,13 +55,14 @@ input {
 }
 
 ul {
-  list-style-type: none;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px
 }
 
-ul li a {
-  display: inline-block;
-  text-align: center;
+a {
   color: #707070;
-  padding: 14px 16px;
   text-decoration: none;
 }
